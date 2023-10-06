@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+}
+
+.arrow-button {
+  width: 65px;
+  height: 50px;
+  background-color: white;
+  border: solid 2px rgb(200, 200, 200);
+  border-radius: 5px;
+  transition: background .1s;
+}
+.arrow-button:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+.arrow-button:active {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.arrow-button.reversed img {
+  transform: rotate(180deg);
+}
